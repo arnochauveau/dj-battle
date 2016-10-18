@@ -16,11 +16,21 @@ export function keyCaptureService(scoreStorage){
     console.log(event.key);
 
     if(event.key === 'Delete'){
-      scoreStorage.disableLast();
+    let lastId = scoreStorage.disableLast();
+    removeKey(lastId);
+
     }
 
     if(_keys.hasOwnProperty(event.key)){
       scoreStorage.addPointToScore(_keys[event.key]);
+    }
+  }
+
+  function removeKey(index){
+    for(let key in _keys) {
+        if(_keys[key] == index) {
+            delete _keys[key];
+        }
     }
   }
 

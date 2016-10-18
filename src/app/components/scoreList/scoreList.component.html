@@ -1,9 +1,9 @@
 <div ng-repeat="score in $ctrl.scores|orderBy:'-score'">
-  <div class="score-entry">
+  <div class="score-entry {{score.active?'':'disabled'}}">
         <div class="place">
           {{$index + 1}}
         </div>
-        <div class="name">
+        <div class="name {{score.active?'':'disabled'}}">
           {{score.name}}
         </div>
         <div class="score">

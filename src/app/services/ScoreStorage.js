@@ -28,11 +28,12 @@
   function disableLast (){
     let lowestScore = {score: 99999};
     for (var i = 0; i < _scores.length; i++) {
-      if( _scores[i].score < lowestScore.score) {
+      if( _scores[i].score < lowestScore.score && _scores[i].active === true) {
         lowestScore = _scores[i];
       }
     }
     _scores[lowestScore.id].active = false;
+    return lowestScore.id;
 
   }
 

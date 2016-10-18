@@ -13,6 +13,10 @@ h1{
   border-radius: 5px;
 }
 
+.score-entry.disabled{
+opacity: 0.4;
+}
+
 .score-entry > div{
   display: inline-block;
   font-size: 50px;
@@ -23,6 +27,9 @@ h1{
 
 .score-entry > .name{
   width: 800px;
+}
+.score-entry > .name.disabled{
+  text-decoration: line-through;
 }
 .score-entry > .score{
   width: 200px;
