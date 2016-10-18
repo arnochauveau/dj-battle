@@ -1,0 +1,7 @@
+{
+  "name": "DJ-battle",
+  "main": "index.html",
+  "window": {
+	"fullscreen":true
+	}
+}
