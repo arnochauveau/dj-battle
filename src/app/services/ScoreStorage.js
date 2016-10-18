@@ -17,8 +17,18 @@
     {id: 6, name: 'Kriko & Tarsicius', score: 0, active: true}
   ];
 
+  function init(){
+     let storedScores = JSON.parse(localStorage.getItem('scores'));
+
+     if(storedScores){
+       _scores = storedScores;
+       console.log(storedScores)
+     }
+  }
+
   function addPointToScore (id) {
     _scores[id].score = _scores[id].score + 1;
+    setStoredScores();
   }
 
   function getScores () {
@@ -33,13 +43,21 @@
       }
     }
     _scores[lowestScore.id].active = false;
+    localStorage.setItem('scores',JSON.stringify(_scores));
     return lowestScore.id;
-
   }
+
+  function setStoredScores(){
+    localStorage.setItem('scores',JSON.stringify(_scores));
+  }
+
+  init();
 
   return {
     addPointToScore: addPointToScore,
     getScores: getScores,
     disableLast: disableLast
   };
+
+
 }
