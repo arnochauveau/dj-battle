@@ -10,11 +10,11 @@
   let _scores = [
     {id: 0, name: 'KLJ', score: 0, active: true},
     {id: 1, name: 'JIN \'99', score: 0, active: true},
-    {id: 2, name: 'Kriko-m, Tereken, Akabe', score: 1, active: true},
+    {id: 2, name: 'Kriko-m, Tereken, Akabe', score: 0, active: true},
     {id: 3, name: 'Bermijn, D\'olmen, Dobo', score: 0, active: true},
     {id: 4, name: 'Chiro Gewest Rondom', score: 0, active: true},
-    {id: 5, name: 'Vincies, Kristoffel, Martinus', score: 3, active: true},
-    {id: 6, name: 'Kriko & Tarsicius', score: 2, active: true}
+    {id: 5, name: 'Vincies, Kristoffel, Martinus', score: 0, active: true},
+    {id: 6, name: 'Kriko & Tarsicius', score: 0, active: true}
   ];
 
   function addPointToScore (id) {

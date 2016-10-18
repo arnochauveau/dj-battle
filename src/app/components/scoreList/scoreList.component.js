@@ -8,4 +8,7 @@ export let scoreList = {
 
 function scoreListController (){
   let $ctrl = this;
+
+
+
 }

@@ -14,14 +14,23 @@ angular
       controller: appContainerController
   });
 
-function appContainerController(scoreStorage){
+function appContainerController(scoreStorage, keyCaptureService, $scope){
   let $ctrl = this;
 
   $ctrl.scores = [];
 
   $ctrl.$onInit = function () {
     $ctrl.scores = scoreStorage.getScores();
-    console.log($ctrl.scores);
+    window.onkeydown = (event) => {
+      keyCaptureService.keyPressed(event);
+      refreshList();
+    }
+  }
+
+  function refreshList (){
+    $scope.$apply(()=>{
+      $ctrl.scores = scoreStorage.getScores();
+    });
   }
 }
 
