@@ -1,18 +1,18 @@
 @font-face {
     font-family: 'BebasNeue';
-    src: url('/fonts/BebasNeue.eot');
-    src: url('/fonts/BebasNeue.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/BebasNeue.woff2') format('woff2'),
-         url('/fonts/BebasNeue.woff') format('woff'),
-         url('/fonts/BebasNeue.svg#BebasNeue') format('svg');
-         url('/fonts/BebasNeue.ttf') format('truetype'),
+    src: url(/fonts/BebasNeue.eot);
+    src: url(/fonts/BebasNeue.eot?#iefix) format('embedded-opentype'),
+         url(/fonts/BebasNeue.woff2) format('woff2'),
+         url(/fonts/BebasNeue.woff) format('woff'),
+         url(/fonts/BebasNeue.svg#BebasNeue) format('svg'),
+         url(/fonts/BebasNeue.ttf) format('truetype');
     font-weight: normal;
     font-style: normal;
 
 }
 
 body{
-  font-family: 'BebasNeue';
+  font-family: Arial, sans-serif;
 }
 
 h1{
@@ -21,7 +21,7 @@ h1{
 }
 
 .score-entry{
-  background-color: #FF4a4a;
+  background-color: #0971B2;
   margin: 5px 10%;
   text-align: center;
   border-radius: 5px;
@@ -33,7 +33,7 @@ opacity: 0.4;
 
 .score-entry > div{
   display: inline-block;
-  font-size: 50px;
+  font-size: 45px;
   margin: 20px 5px;
   text-align: left;
   color: #ffffff
@@ -48,14 +48,4 @@ opacity: 0.4;
 .score-entry > .score{
   width: 200px;
   text-align: right;
-}
-.score-entry > .score:after{
-  content: '';
-  background-image: url(/beer.png);
-  background-size: contain;
-  width: 50px;
-  height: 50px;
-  margin-top: 2px;
-  margin-left: 5px;
-  position: absolute;
 }

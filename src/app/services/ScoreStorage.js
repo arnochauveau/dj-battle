@@ -1,11 +1,5 @@
  export function scoreStorage () {
-  // 21u – 22u: KLJ
-  // 22u – 23u: JIN '99
-  // 23u – 0u: Kriko-m, Tereken, Akabe
-  // 0u– 01u: Bermijn, D’olmen, Dobo
-  // 1u- 2u: Chiro Gewest Rondom
-  // 2u-3u: Vincies, Kristoffel, Martinus
-  // 3u-4u: Kriko & Tarsicius
+  const scoreIncrement = 3;
 
   let _scores = [
     {id: 0, name: 'KLJ', score: 0, active: true},
@@ -27,7 +21,7 @@
   }
 
   function addPointToScore (id) {
-    _scores[id].score = _scores[id].score + 1;
+    _scores[id].score = _scores[id].score + scoreIncrement;
     setStoredScores();
   }
 

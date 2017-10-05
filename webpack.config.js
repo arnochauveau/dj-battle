@@ -161,6 +161,9 @@ module.exports = function makeWebpackConfig () {
         template: './src/public/index.html',
         inject: 'body'
       }),
+      new CopyWebpackPlugin([{
+        from: __dirname + '/src/public'
+      }]),
 
       // Reference: https://github.com/webpack/extract-text-webpack-plugin
       // Extract css files
