@@ -2,13 +2,13 @@
   const scoreIncrement = 3;
 
   let _scores = [
-    {id: 0, name: 'KLJ', score: 0, active: true},
-    {id: 1, name: 'JIN \'99', score: 0, active: true},
-    {id: 2, name: 'Kriko-m, Tereken, Akabe', score: 0, active: true},
-    {id: 3, name: 'Bermijn, D\'olmen, Dobo', score: 0, active: true},
-    {id: 4, name: 'Chiro Gewest Rondom', score: 0, active: true},
-    {id: 5, name: 'Vincies, Kristoffel, Martinus', score: 0, active: true},
-    {id: 6, name: 'Kriko & Tarsicius', score: 0, active: true}
+    {id: 0, name: 'Dolmen en Dobo', score: 0, active: true},
+    {id: 1, name: 'JIN 2000', score: 0, active: true},
+    {id: 2, name: 'Kriko-m en Tereken', score: 0, active: true},
+    {id: 3, name: 'Vincies en Sint-Kristoffel', score: 0, active: true},
+    {id: 4, name: 'Bermijn en Martinus', score: 0, active: true},
+    {id: 5, name: 'Tarci en Kriko', score: 0, active: true},
+    {id: 6, name: 'Chiro', score: 0, active: true}
   ];
 
   function init(){
